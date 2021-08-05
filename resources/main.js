@@ -60,3 +60,35 @@ function hideImgMixedMessages() {
 function showImgMixedMessages() {
     document.getElementById("mixed-messages").style.display = "unset";
 }
+
+const darkMode = document.getElementById("dark-mode")
+
+function changeDarkMode() {``
+    if (darkMode.innerText === "Dark Mode") {
+        document.body.style.backgroundColor = '#0D1117'
+        let darkText = document.querySelectorAll("a")
+        console.log(darkText)
+        darkText.forEach(item => {
+            item.style.color = 'white'
+        })
+        let darkTextHeading = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+        darkTextHeading.forEach(item => {
+            item.style.color = 'white'
+        })
+        darkMode.innerText = "Light Mode"
+    } else {
+        document.body.style.backgroundColor = 'white'
+        let darkText = document.querySelectorAll("a")
+        console.log(darkText)
+        darkText.forEach(item => {
+            item.style.color = 'black'
+        })
+        let darkTextHeading = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+        darkTextHeading.forEach(item => {
+            item.style.color = 'black'
+        })
+        darkMode.innerText = "Dark Mode"
+    }
+}
+
+darkMode.onclick = changeDarkMode
