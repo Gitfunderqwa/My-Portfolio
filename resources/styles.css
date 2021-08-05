@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+header {
+    height: 70px;
+    box-shadow: grey 3px 1px 5px;
+    margin-bottom: 50px ;
+}
+
+header h1 {
+    margin: auto 0;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main h2 {
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.recents ul {
+    margin-left: 150px;
+}
+
+.recents li {
+    margin: 10px 0;
+    line-height: 2rem;
+}
+
+.recents a {
+    font-size: 1.5rem;
+}
+
+#company, #tea-cozy, #excursion, #dasmoto, #mixed-messages {
+    display: none;
+}
+
+aside img {
+    width: 500px;
+}
+
