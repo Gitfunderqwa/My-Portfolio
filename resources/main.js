@@ -9,10 +9,12 @@ companyText.onmouseleave = hideImgCompany
 
 function hideImgCompany() {
     document.getElementById("company").style.display = "none"
+    document.getElementById("preview").style.display = "unset"
 }
 
 function showImgCompany() {
     document.getElementById("company").style.display = "unset";
+    document.getElementById("preview").style.display = "none"
 }
 
 teaCozy.onmouseover = showImgTeaCozy
