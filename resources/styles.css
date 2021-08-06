@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
+    background-color: #e0e0e0;
     color: black;
 }
 
@@ -11,14 +11,20 @@ a, h1, h2, h3 {
 }
 
 .container {
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.orange {
+    background-color: rgb(231, 169, 54);
 }
 
 .grid {
     height: 350px;
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: repeat(5, 1fr) / 1fr 1fr;
+    margin-bottom: 50px;
 }
 
 .underlined {
@@ -31,7 +37,6 @@ a, h1, h2, h3 {
 
 header {
     height: 70px;
-    margin-bottom: 50px;
 }
 
 header a {
@@ -80,18 +85,21 @@ nav a:hover {
     }
 }
 
-main h2 {
-    margin-left: 100px;
+.title {
+    margin-left: 70px;
     margin-bottom: 30px;
 }
 
+.recents {
+    margin: auto 0px;
+}
+
 .recents ul {
-    margin-left: 150px;
+    margin-left: 70px;
 }
 
 .recents li {
-    margin: 10px 0;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .recents a {
@@ -110,13 +118,13 @@ aside img {
 
 aside h3 {
     margin: auto 0;
-    color: grey;
+    color: rgb(121, 121, 121);
 }
 
 aside .block {
     width: 600px;
     height: 400px;
-    border: 1px grey solid;
+    border: 1px #fdfdfd solid;
     border-radius: 20px;
 }
 
@@ -136,4 +144,44 @@ aside .block {
     .recents h2 {
         margin-left: 5%;
     }
+}
+
+article {
+    padding-left: 50px;
+    width: 40%;
+    margin: auto 0;
+}
+
+div .container {
+    margin: 20px;
+}
+
+article h2 {
+    margin-right: 0;
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    article {
+        text-align: center;
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+/* Contact Me Page */
+
+.contact {
+    margin: 20px 10%;
+}
+
+.contact h1 {
+    font-size: 2rem;
+}
+
+.contact h2 {
+    font-size: 1.75rem;
 }
