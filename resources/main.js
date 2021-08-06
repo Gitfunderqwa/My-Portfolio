@@ -69,11 +69,11 @@ function changeDarkMode() {``
         let darkText = document.querySelectorAll("a")
         console.log(darkText)
         darkText.forEach(item => {
-            item.style.color = 'white'
+            item.style.color = '#C9D1D9'
         })
         let darkTextHeading = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
         darkTextHeading.forEach(item => {
-            item.style.color = 'white'
+            item.style.color = '#C9D1D9'
         })
         darkMode.innerText = "Light Mode"
     } else {

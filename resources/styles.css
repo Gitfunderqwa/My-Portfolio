@@ -31,11 +31,13 @@ a, h1, h2, h3 {
 
 header {
     height: 70px;
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
 }
 
-header h1 {
+header a {
     margin: auto 0;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 
@@ -43,23 +45,39 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 600px;
 }
 
 nav ul {
     display: flex;
-    width: 500px;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
 }
 
-header a {
+nav a {
     text-decoration: none;
     font-weight: 700;
-    font-size: larger;
+    font-size: 1.25rem;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* This is for the header */
+@media only screen and (max-width: 1000px) {
+    header {
+        margin: 0;
+        display: block;
+        padding-bottom: 15px;
+        flex-wrap: wrap;
+        height: 120px;
+        width: auto;
+    }
+    nav {
+        justify-content: space-evenly;
+        width: 450px;
+    }
 }
 
 main h2 {
@@ -102,3 +120,20 @@ aside .block {
     border-radius: 20px;
 }
 
+/* This is for the first section with the preview pane */
+@media only screen and (max-width: 1000px) {
+    .screenshots {
+        display: none;
+    }
+    .recents {
+        display: inline-block;
+        margin: auto 10px;
+        width: 1000px;
+    }
+    .recents ul {
+        margin-left: 10%;
+    }
+    .recents h2 {
+        margin-left: 5%;
+    }
+}
